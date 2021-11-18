@@ -373,18 +373,13 @@ library(caret)
 library(doParallel)
 library(scales)
 library(foreach)
-library(lubridate)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;lubridate&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     date, intersect, setdiff, union</code></pre>
-<pre class="r"><code># Local set up &amp; register parallel backend
+library(lubridate)
+
+# Local set up &amp; register parallel backend
 numCores &lt;- detectCores() - 1
 cl &lt;- makePSOCKcluster(numCores)
 registerDoParallel(cl)
 
-# spotify &lt;- read_csv(&quot;hw3/spotify_dataset.csv&quot;)
 spotify &lt;- read_csv(&quot;spotify_dataset.csv&quot;)</code></pre>
 <pre><code>## Rows: 1556 Columns: 23</code></pre>
 <pre><code>## -- Column specification ------------------------------------------------------------------------------------------------
