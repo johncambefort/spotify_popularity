@@ -1,2 +1,6 @@
-# spotify_popularity
-Reverse-engineering Spotify's Song "Popularity" metric
+# How does Spotify define a song's Popularity?
+The report can be viewed here: [spotify_popularity.githubpages.io](https://spotify_popularity.github.io)
+
+The HTML file included in this repository is a report I produced for my fall 2021 Statistical Learning course with Professor [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503). In the report, I tentatively break down Spotify's song "popularity" metric (ranging from 0 to 100, where 100 is most popular) to discover which variables Spotify considers when defining  a song's popularity. The dataset analyzed contains songs featured on Spotify's Top 200 Charts across 2020 and 2021.
+
+I find that a song's popularity is largely dependent on its release date and its presence on the charts: generally, if a new song makes it onto the Top 200 charts, its popularity is high (the song is a banger). Over time however, if the song drops off the charts, Spotify seems to decay the song's popularity: the song is getting 'old'. Some songs which prevail and manage to stay on the charts for a while seem to maintain high levels of popularity.
