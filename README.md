@@ -1,5 +1,5 @@
 # How does Spotify define a song's Popularity?
-The report can be viewed here: [spotify_popularity.githubpages.io](https://spotify_popularity.github.io)
+The report can be viewed here: [https://johncambefort.github.io/spotify_popularity/](https://johncambefort.github.io/spotify_popularity/)
 
 The HTML file included in this repository is a report I produced for my fall 2021 Statistical Learning course with Professor [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503). In the report, I tentatively break down Spotify's song "popularity" metric (ranging from 0 to 100, where 100 is most popular) to discover which variables Spotify considers when defining  a song's popularity. The dataset analyzed contains songs featured on Spotify's Top 200 Charts across 2020 and 2021.
 
