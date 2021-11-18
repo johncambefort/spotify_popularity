@@ -362,7 +362,8 @@ pre code {
 </div>
 
 
-<p>Author: John Cambefort Date: 11/15/2021</p>
+<p><strong>Author</strong>: John Cambefort</p>
+<p><strong>Date</strong>: 11/15/2021</p>
 <p>This report is a polished excerpt I did for my Statistical Learning course at Middlebury.</p>
 <p>We are working with a dataset with a list of songs that were on Spotify’s <a href="https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021">Top 200 Charts</a> at some point in between January 1st 2020 and August 16th 2021; the dataset was uploaded by Kaggle user <a href="https://www.kaggle.com/sashankpillai">Sashank Pillai</a>. I was interested in reverse-engineering the “Popularity” metric designed by Spotify. Specifically, I want to know which variables are more heavily considered when determining a song’s Popularity metric (a ranking from 0-least popular to 100-most popular).</p>
 <p>I’ll start by making a few exploratory graphs of the data, proceed to filter down the data (for reasons explained below), and then build an optimized random forest model that best predicts a song’s Popularity given the training dataset. We will then look at the random forest’s Variable Importance table to determine which variables seem to weigh heavily in Spotify’s algorithm which determines a song Popularity.</p>
