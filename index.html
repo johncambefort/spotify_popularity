@@ -479,7 +479,7 @@ best_results[index, ]</code></pre>
 ## 26   16  variance            26 4.263817 0.7939816 3.221774 0.2215335
 ##    RsquaredSD     MAESD
 ## 26 0.01893885 0.1442048</code></pre>
-<p>We’ve identified our optimal training parameters for the random forest and it seems we’ve yielded some surprisingly good results from the model. The R-Mean Squared Error is as low as ~4.264, which means that we’re off by roughly this many on average when attempting to predict a song’s Popularity. Likewise, the variance observed in our predictions can be explained by 79.40% of our variables, which is pretty good.</p>
+<p>We’ve identified our optimal training parameters for the random forest and it seems we’ve yielded some surprisingly good results from the model. The R-Mean Squared Error is as low as ~4.264, which means that we’re off by roughly this many on average when attempting to predict a song’s Popularity. Likewise, 79.40% of the variance observed in our predictions can be explained by of our variables, which is pretty good.</p>
 <p>After testing out the <code>extratrees</code> parameter for splitrule, we observed that <code>variance</code> was optimal.</p>
 <p>Let’s now build the model using the optimal parameters, and then go ahead and examine it’s Variable Importance table!</p>
 <pre class="r"><code>optimal_rf &lt;- caret::train(Popularity ~ .,
